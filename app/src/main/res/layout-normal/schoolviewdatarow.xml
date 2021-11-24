@@ -1,0 +1,2225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="05dp"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name of School(पाठशाला का नाम):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name of School"
+                android:layout_marginTop="40dp"
+                android:id="@+id/nameofschool"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plot Area(प्लॉट एरिया (वर्गमीटर में)):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="70dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plot Area"
+                android:layout_marginTop="100dp"
+                android:id="@+id/plotarea"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of structures/buildings(भवनों की संख्या):"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="130dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of structures/buildings"
+                android:layout_marginTop="160dp"
+                android:id="@+id/noofbuilding"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of storeys of each structure(प्रत्येक संरचना की मंजिलों की संख्या):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="190dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of storeys of each structure"
+                android:layout_marginTop="225dp"
+                android:textSize="16dp"
+                android:id="@+id/noofroom"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. of teachers permanent and on contract basis(शिक्षकों की संख्या - स्थायी और अनुबंध के आधार पर):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="245dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" No. of teachers permanent"
+                android:layout_marginTop="290dp"
+                android:id="@+id/noofteacher"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do all classes have benches/desks for students( क्या सभी कक्षाओं में छात्रों के लिए बेंच/डेस्क हैं?):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="310dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/desk"
+                android:text="desk"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="355dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Does the school have sports infrastructure(क्या स्कूल में खेल का बुनियादी ढांचा है?):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="370dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sport"
+                android:text="Sport infrastucture"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="408dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="430dp"
+                android:layout_marginRight="30dp"
+                android:text="Does the school have adequate medical/first-aid facilities?(क्या स्कूल में पर्याप्त चिकित्सा/प्राथमिक चिकित्सा सुविधाएं हैं?):"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/medical"
+                android:text="Medical"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="475dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mid-day meal schedule of the week(सप्ताह का मध्याह्न भोजन कार्यक्रम):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="500dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mid-day meal schedule of the week"
+                android:layout_marginTop="535dp"
+                android:id="@+id/madhyanbhojan"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Separate Kitchen for cooking and storage of food/grocery stock(खाना पकाने और भोजन/किराना स्टॉक के भंडारण के लिए अलग रसोई?):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="560dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/food"
+                android:text="food"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="605dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Does the school have separate toilet for girls and boys in the same premises(क्या स्कूल में लड़कियों और लड़कों के लिए एक ही परिसर में अलग शौचालय है?):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="620dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toilet2"
+                android:text="Toilet"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="685dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Source of Water(पानी का स्रोत):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="705dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sourceofwater"
+                android:text="Water source"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="725dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Electricity in schools(स्कूलों में बिजली?):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="750dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/electocity"
+                android:text="Electriccity"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="780dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Separate teachers room(अलग शिक्षक कक्ष?):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="810dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/teachar"
+                android:text="Separate teacher room"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="840dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Indoor sports room(इंडोर स्पोर्ट्स रूम?):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="870dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sporttype"
+                android:text="indoor sport"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="900dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Any problem of water leakage from the roof/otherwise( छत से पानी के रिसाव की कोई समस्या/अन्यथा?):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="930dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/problem"
+                android:text="Any problem"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="975dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Computer facility for teachers(शिक्षकों के लिए कंप्यूटर की सुविधा?):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="990dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/computer"
+                android:text="Computer facility in teacher"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1025dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If yes(यदि हाँ):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1050dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/noofcomputer"
+                android:text="number of computer in teachers"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1080dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Computer facility for students(छात्रों के लिए कंप्यूटर की सुविधा?):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1110dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/computerstudent"
+                android:text="Computer facility in student"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1145dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If yes(यदि हाँ):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1170dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/noofcomputerstudent"
+                android:text="no of computer in student"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1200dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No of students enrolled per class(प्रति कक्षा नामांकित छात्रों की संख्या (लड़कियां/लड़के अलग)):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1230dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LKG"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1280dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1300dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1300dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="1300dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/lkgtotal"
+                android:text="Lkg total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1325dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/lkggirls"
+                android:text="Lkg girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="1325dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/lkgboys"
+                android:text="Lkg boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="1325dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UKG"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1360dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1380dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1380dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="1380dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/ukgtotal"
+                android:text="Ukg total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1410dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/ukggirls"
+                android:text="Ukg girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="1410dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/ukgboys"
+                android:text="Ukg boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="1410dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1440dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1460dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1460dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="1460dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/onetotal"
+                android:text="One total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1485dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/onegirls"
+                android:text="One girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="1485dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/oneboys"
+                android:text="One boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="1485dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2nd"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1520dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1540dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1540dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="1540dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/twototal"
+                android:text="Two total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1565dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/twogirls"
+                android:text="Two girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="1565dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/twoboys"
+                android:text="Two boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="1565dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1620dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1640dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1640dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="1640dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/threetotal"
+                android:text="Three total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1665dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/threegirls"
+                android:text="Three girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="1665dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/threeboys"
+                android:text="Three boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="1665dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1720dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1740dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1740dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="1740dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/fourtotal"
+                android:text="four total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1765dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/fourgirls"
+                android:text="Four girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="1765dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/fourboys"
+                android:text="Four boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="1765dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1820dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1840dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1840dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="1840dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/fifthtotal"
+                android:text="Fifth total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1865dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/fifthgirls"
+                android:text="Fifth girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="1865dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/fifthboys"
+                android:text="fifth boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="1865dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1920dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1940dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1940dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="1940dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/sixtotal"
+                android:text="Six total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1965dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/sixgirls"
+                android:text="Six girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="1965dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/sixboys"
+                android:text="Six boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="1965dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2020dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2040dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2040dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="2040dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/seventotal"
+                android:text="Seven total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2065dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/sevengirls"
+                android:text="Seven girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="2065dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/sevenboys"
+                android:text="Seven boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="2065dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2120dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2140dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2140dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="2140dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/eighttotal"
+                android:text="Eight total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2165dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/eightgirls"
+                android:text="eight girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="2165dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/eightboys"
+                android:text="Eight boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="2165dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2220dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2240dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2240dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="2240dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/ninetotal"
+                android:text="Nine total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2265dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/ninegirls"
+                android:text="Nine girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="2265dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/nineboys"
+                android:text="Nine boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="2265dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2320dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2340dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2340dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="2340dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/tentotal"
+                android:text="ten total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2365dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/tengirls"
+                android:text="ten gorls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="2365dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/tenboys"
+                android:text="ten boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="2365dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2410dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2430dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2430dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="2430dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/eleventotal"
+                android:text="eleven total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2455dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/elevengirls"
+                android:text="eleven girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="2455dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/elevenboys"
+                android:text="eleven boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="2455dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2500dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2520dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2520dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="2520dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/twalbtotal"
+                android:text="Twelve total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2545dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/twalbgirls"
+                android:text="Twelve girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="2545dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/twalbboys"
+                android:text="Twelve boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="2545dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drop out ratio of students every year class-wise(हर साल छात्रों का ड्रॉप आउट अनुपात कक्षावार):"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2580dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LKG"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2630dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2650dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2650dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="2650dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoollkgtotal"
+                android:text="Lkg total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2675dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoollkggirls"
+                android:text="Lkg girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="2675dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoollkgboys"
+                android:text="Lkg boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="2675dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UKG"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2720dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2740dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2740dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="2740dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolukgtotal"
+                android:text="Ukg total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2765dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolukggirls"
+                android:text="Ukg girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="2765dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolukgboys"
+                android:text="Ukg boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="2765dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2820dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2840dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2840dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="2840dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolonetotal"
+                android:text="One total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2865dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolonegirls"
+                android:text="One girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="2865dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schooloneboys"
+                android:text="One boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="2865dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2nd"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2920dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2940dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2940dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="2940dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schooltwototal"
+                android:text="Two total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2965dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schooltwogirls"
+                android:text="Two girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="2965dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schooltwoboys"
+                android:text="Two boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="2965dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3020dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3040dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3040dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="3040dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolthreetotal"
+                android:text="Three total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3065dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolthreegirls"
+                android:text="Three girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3065dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolthreeboys"
+                android:text="Three boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="3065dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3120dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3140dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3140dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="3140dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolfourtotal"
+                android:text="four total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3165dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolfourgirls"
+                android:text="Four girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3165dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolfourboys"
+                android:text="Four boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="3165dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3220dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3240dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3240dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="3240dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolfifthtotal"
+                android:text="Fifth total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3265dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolfifthgirls"
+                android:text="Fifth girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3265dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolfifthboys"
+                android:text="fifth boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="3265dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3320dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3340dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3340dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="3340dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolsixtotal"
+                android:text="Six total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3365dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolsixgirls"
+                android:text="Six girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3365dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolsixboys"
+                android:text="Six boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="3365dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3420dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3440dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3440dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="3440dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolseventotal"
+                android:text="Seven total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3465dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolsevengirls"
+                android:text="Seven girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3465dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolsevenboys"
+                android:text="Seven boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="3465dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3520dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3540dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3540dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="3540dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schooleighttotal"
+                android:text="Eight total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3565dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schooleightgirls"
+                android:text="eight girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3565dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schooleightboys"
+                android:text="Eight boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="3565dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3620dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3640dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3640dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="3640dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolninetotal"
+                android:text="Nine total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3665dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolninegirls"
+                android:text="Nine girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3665dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolnineboys"
+                android:text="Nine boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="3665dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3720dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3740dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3740dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="3740dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schooltentotal"
+                android:text="ten total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3765dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schooltengirls"
+                android:text="ten gorls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3765dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schooltenboys"
+                android:text="ten boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="3765dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3810dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3830dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3830dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="3830dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schooleleventotal"
+                android:text="eleven total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3855dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolelevengirls"
+                android:text="eleven girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3855dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schoolelevenboys"
+                android:text="eleven boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="3855dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12th"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3900dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total student"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3920dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3920dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:layout_marginTop="3920dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schooltwalbtotal"
+                android:text="Twelve total"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3945dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schooltwalbgirls"
+                android:text="Twelve girls"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3945dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/schooltwalbboys"
+                android:text="Twelve boys"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="3945dp"/>
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit"
+                android:background="#ffff"
+                android:id="@+id/editdata"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginRight="30dp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/delete1"
+                android:background="#ffff"
+                android:id="@+id/deletedata"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginRight="30dp"/>
+
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,2 @@
+rootProject.name='Arjavam Survey'
+include ':app'

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".homeFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Insert data"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:id="@+id/homeradio"
+        android:gravity="center">
+
+
+        <RadioButton
+            android:id="@+id/households"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Households"
+            android:theme="@style/radio"/>
+
+        <RadioButton
+            android:id="@+id/School"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="School"
+            android:layout_marginRight="15dp"
+            android:theme="@style/radio"/>
+
+
+
+
+
+
+
+    </RadioGroup>
+
+</FrameLayout>

@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".households">
+    <include layout="@layout/toolbar"
+        android:id="@+id/housetoolbar"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="55dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start"
+                android:text="House number(हाउस नंबर):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/houseno"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the house number"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="90dp"
+                android:gravity="start"
+                android:text="Number of households"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/numberhousehold"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the Number of Households"
+                android:inputType="number"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="170dp"
+                android:gravity="start"
+                android:text="Name of owner(मालिक का नाम):"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/nameofowner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the Name of Owner"
+                android:paddingLeft="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="250dp"
+                android:gravity="start"
+                android:text="Caste(जाति):"
+                android:textColor="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/cast"
+                android:theme="@style/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="260dp"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="300dp"
+                android:gravity="start"
+                android:text="Gender(लिंग):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/gender"
+                android:theme="@style/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="310dp"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="345dp"
+                android:gravity="start"
+                android:text="Age(उम्र):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="370dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the age"
+                android:inputType="number"
+                android:paddingLeft="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="415dp"
+                android:gravity="start"
+                android:text="Qualification(योग्यता):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/educationlevel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="440dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the qualification"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="490dp"
+                android:gravity="start"
+                android:text="Number of male members(पुरुष सदस्यों की संख्या):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/noofmalemumbers"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="515dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the Number of male members"
+                android:inputType="number"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="560dp"
+                android:gravity="start"
+                android:text="Number of Female members(महिला सदस्यों की संख्या):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/nooffemalemumbers"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="590dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the Number of female members"
+                android:inputType="number"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="630dp"
+                android:gravity="start"
+                android:text="Number of male Children(पुरुष बच्चों की संख्या):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/noofmalechildren"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="655dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the Number of male Children"
+                android:inputType="number"
+                android:paddingLeft="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="695dp"
+                android:gravity="start"
+                android:text="Number of Female Children(महिला बच्चों की संख्या):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/nooffemalechildren"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="720dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Number of Female Children"
+                android:inputType="number"
+                android:paddingLeft="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="760dp"
+                android:gravity="start"
+                android:text="Occupation(व्यवसाय):"
+                android:textColor="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/occupation"
+                android:theme="@style/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="775dp"
+                android:layout_marginRight="30dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="815dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start"
+                android:text="Number of children going to the school in a houldhold(एक परिवार में स्कूल जाने वाले बच्चों की संख्या):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/childno"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="873dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the number of children going to the school in a households"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="910dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start"
+                android:text="Number of disabled in the Households(एक परिवार में विकलांगों की संख्या):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/disablechild"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="950dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the number of disabled in the households"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="990dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start"
+                android:text="Source of drinking water(पीने के पानी का स्रोत):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/watersoure"
+                android:theme="@style/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1010dp"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1050dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start"
+                android:text="Agricultural area with the Households(परिवारों के साथ कृषि क्षेत्र):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/agriculter"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1090dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the Agricultural area with the households"
+                android:paddingLeft="20dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1135dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start"
+                android:text="Avg monthly household income(औसत मासिक घरेलू आय):"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/incom"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1175dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the avg monthly household income"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1215dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start"
+                android:text="Number of Cattle per household( प्रति परिवार मवेशियों की संख्या):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/cattle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1255dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the number of cattle per household"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1305dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start"
+                android:text="Does the households have separate toilet(क्या एचएच के पास अलग शौचालय है):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/toilet"
+                android:theme="@style/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1335dp"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1370dp"
+                android:gravity="start"
+                android:text="If Yes(यदि हाँ):"
+                android:textColor="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/yestoilet"
+                android:theme="@style/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1390dp"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1430dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start"
+                android:text="Number of Rooms per households(प्रति परिवार कमरों की संख्या)"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/noofroomh"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1470dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the no of rooms perhouseholds"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1520dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start"
+                android:text="Separate kitchen(अलग किचन):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/kitchan"
+                android:theme="@style/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1535dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1580dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start"
+                android:text="Area of plot per households(प्रति परिवार भूखंड का क्षेत्रफल):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/plot"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1630dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the area of plot per households"
+                android:paddingLeft="20dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1680dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start"
+                android:text="Number of structures buildings in the plot( भूखंड में संरचनाओं/भवनों की संख्या):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/noofbulid"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1725dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the number of structures buildings in the plot"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1765dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start"
+                android:text="number of storeys of each structure(प्रत्येक संरचना की मंजिलों की संख्या):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/noofsotry"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1805dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the number of storeys of each structure"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1850dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start"
+                android:text="plot area( प्लॉट एरिया (वर्गमीटर में)):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/plotinsqr"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1885dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the plot area in sqr"
+                android:paddingLeft="20dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1930dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start"
+                android:text="Is there stigma associated with particular issues or practices( क्या विशेष मुद्दों या प्रथाओं से जुड़ा कलंक है?):"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/issue"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1990dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/design"
+                android:hint="Enter the stigma particular issues or practices"
+                android:paddingLeft="20dp"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2050dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/design"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="#FFFF"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

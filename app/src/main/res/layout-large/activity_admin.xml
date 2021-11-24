@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".admin">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/admintoolbar"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/adminmail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/design"
+        android:hint="Please Enter the Email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/adminPassword"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:paddingLeft="20dp"
+        android:inputType="textPassword"
+        android:hint="Enter the Password"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/design"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginadmin"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/lock"
+        android:background="@drawable/design"
+        android:textAllCaps="false"
+        android:text="Admin login"
+        android:gravity="center"
+        android:paddingLeft="200dp"
+        android:paddingRight="200dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="300dp"
+        android:textColor="#FFFF"/>
+
+</RelativeLayout>

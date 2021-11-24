@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userlogin">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/usertoolbar"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/useremail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:background="@drawable/design"
+        android:hint="Please enter the email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/userpassword"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:background="@drawable/design"
+        android:hint="Please enter the Password"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userlogin"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/lock"
+        android:background="@drawable/design"
+        android:textAllCaps="false"
+        android:text="Login"
+        android:paddingLeft="110dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingRight="110dp"
+        android:textColor="#FFFF"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>
